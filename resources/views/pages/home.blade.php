@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('titre')
+Hello City
+@endsection
+
 @section('content')
 
 <h1>Hello from Québec</h1>

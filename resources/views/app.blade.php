@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Hello City</title>
+ <!-- si on ne donne pas le contenu titre alors par défault alors Hello City sera choisi -->
+    <title>@yield('titre', 'Hello City')</title>
 
 </head>
 
