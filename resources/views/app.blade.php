@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
- <!-- si on ne donne pas le contenu titre alors par défault alors Hello City sera choisi -->
-    <title>@yield('titre', 'Hello City')</title>
+    
+ <!-- si on ne donne pas le contenu titre alors par défault Hello City sera choisi en 
+    allant ds dossier config et fichier app.php et clé du tableau 'name' -->
+    <title>@yield('titre', config('app.name'))</title>
 
 </head>
 
