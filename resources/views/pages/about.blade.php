@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('app')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@section('content')
 
-    <title>About-us | Hello city</title>
+<p>Built with &hearts; by net2u</p>
 
-</head>
+<p><a href="/">Page accueil</a></p>
 
-<body>
-    <p>Built with &hearts; by net2u</p>
-
-    <p><a href="/">Page accueil</a></p>
-
-    <footer>
-        <p>&copy; Copyright {{ date('y') }}</p>
-    </footer>
-</body>
-
-</html>
+@endsection
