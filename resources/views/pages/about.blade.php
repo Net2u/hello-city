@@ -4,7 +4,7 @@
    
 @section('content')
 
-<img src="/images/net2u.png" alt="Net2u">
+<img src="{{ asset('images/net2u.png')}}" alt="Net2u">
 
 <p>Built with &hearts; by net2u</p>
 

@@ -6,7 +6,7 @@ Hello City
 
 @section('content')
 
-<img src="/images/drapeau_quebec.png" alt="Drapeau du Québec">
+<img src=" {{asset('images/drapeau_quebec.png') }}" alt="Drapeau du Québec">
 
 <h1>Hello from Québec</h1>
 
