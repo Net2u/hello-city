@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- ternaire -> si pageTitle existe alors on passe $pageTitle suivi de  config('app.name') qui est Hello City 
+    si non on affiche seulement config('app.name') qui est (ds dossier config et fichier app.php et clé du tableau 'name') -->
+    <title>{{ isset($pageTitle) ? $pageTitle . ' | ' . config('app.name') : config('app.name') }}</title>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -12,31 +16,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <!-- si on ne donne pas le contenu titre alors par défault Hello City sera choisi en 
-    allant ds dossier config et fichier app.php et clé du tableau 'name' -->
-    <title>@yield('titre', config('app.name'))</title>
-
 </head>
 
 <body>
     <div class="container">
-        <!-- bloc de contenu qui change de page en page -->
-        @yield('content')
-        <footer>
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex justify-content-center">
-                        <p>&copy; Copyright {{ date('y') }}
-                            <!-- si la methode is est fausse on affiche pas le lien about 
-            si non on affiche le lien about -->
-                            @if (! Route::is ('about'))
-                            &middot; <a href=" {{ route('about') }}">About Us</a></p>
-                            @endif
-                        
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <main>
+            <!-- bloc de contenu qui change de page en page -->
+            @yield('content')
+        </main>
+
+        @include('layouts.partials._footer')
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>

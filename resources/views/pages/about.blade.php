@@ -1,6 +1,6 @@
-@extends('app')
+@extends('layouts.app', ['pageTitle' => 'About-Us'])
 
-@section('titre', 'About | ' . config('app.name'))
+
 
 @section('content')
 <div class="row justify-content-center">

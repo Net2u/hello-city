@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,4 +23,8 @@ Route::get('/', function () {
 Route::get('/about-us', function () {
     return view('pages.about');
 })->name('about'); // On va donné un nom à notre route
+
+Route::get('/help', function (){
+return view('pages/help');
+});
 
