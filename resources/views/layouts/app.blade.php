@@ -7,7 +7,7 @@
 
     <!-- ternaire -> si pageTitle existe alors on passe $pageTitle suivi de  config('app.name') qui est Hello City 
     si non on affiche seulement config('app.name') qui est (ds dossier config et fichier app.php et clé du tableau 'name') -->
-    <title>{{ isset($pageTitle) ? $pageTitle . ' | ' . config('app.name') : config('app.name') }}</title>
+    <title>{{ pageTitle($title ?? null) }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
