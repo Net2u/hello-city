@@ -1,4 +1,4 @@
-@extends('layouts.app', ['pageTitle' => 'About-Us'])
+@extends('layouts.app', ['title' => 'About-Us'])
 
 
 
