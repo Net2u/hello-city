@@ -14,17 +14,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages/home');
-})->name('home');// On va donné un nom à notre route
+// Route::get('/', function () {
+//     return view('pages/home');
+// })->name('home');// On va donné un nom à notre route
 
-    
-    
-Route::get('/about-us', function () {
-    return view('pages.about');
-})->name('about'); // On va donné un nom à notre route
+// refactoring récente version php méthode 2
+//Route::get('/', fn() => view('pages/home'))->name('home');
 
-Route::get('/help', function (){
-return view('pages/help');
-});
+// refactoring récente version php méthode 3
+Route::view('/', 'pages.home')->name('home');
+
+
+// Route::get('/about-us', function () {
+//     return view('pages.about');
+// })->name('about'); // On va donné un nom à notre route
+
+// refactoring récente version php méthode 2
+//Route::get('/about', fn() => view('pages.about'))->name('about');
+// refactoring récente version php méthode 3
+Route::view('/about', 'pages.about')->name('about');
+
+//Route::get('/help', fn() => view('pages.help'))->name('help');
+Route::view('/help', ('pages.help'))->name('help');
+
+
 
