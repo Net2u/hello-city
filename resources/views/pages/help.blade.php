@@ -3,7 +3,7 @@
 
 @section('content')
 
-<h1>Help</h1>
+<h1 class = "text-center">Help</h1>
 
 <p>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate libero dignissimos doloremque animi. Atque sit, qui animi laboriosam maxime neque laborum ab nisi a in ipsum omnis recusandae esse enim.
