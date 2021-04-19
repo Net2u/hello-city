@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -37,5 +38,8 @@ Route::view('/about', 'pages.about')->name('about');
 //Route::get('/help', fn() => view('pages.help'))->name('help');
 Route::view('/help', ('pages.help'))->name('help');
 
+Auth::routes();
+
+Route::get('/compte', [HomeController::class, 'index'])->name('compte');
 
 
