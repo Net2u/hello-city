@@ -88,7 +88,7 @@
 </header>
 
 <body>
-  <div class="container">
+  <div class="container mt-3">
     <main>
       <!-- bloc de contenu qui change de page en page -->
       @yield('content')

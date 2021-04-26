@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="row justify-content-center mt-3">
+<div class="row justify-content-center">
     <div class="col-10">
         <div class="row justify-content-center">
             <img src=" {{asset('images/drapeau_quebec.png') }}" alt="Drapeau du Québec" class="img-fluid">
