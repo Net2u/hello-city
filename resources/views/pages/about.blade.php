@@ -3,7 +3,7 @@
 
 
 @section('content')
-<div class="row justify-content-center">
+<div class="row justify-content-center mt-3">
     <div class="col-10">
         <div class="row justify-content-center">
             <img src="{{ asset('images/net2u.png')}}" alt="Net2u" class="img-fluid">
