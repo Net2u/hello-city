@@ -33,18 +33,15 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- Left Side Of Navbar -->
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <li>
+            <a class="nav-link" href="{{ route('home') }}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">About-Us</a>
+            <a class="nav-link" href="{{ route('about') }}">About-Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/help">Help</a>
+            <a class="nav-link" href="{{ route('help') }}">Help</a>
           </li>
-          {{-- <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li> --}}
         </ul>
 
         <!-- Right Side Of Navbar -->
