@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="row justify-content-center">
-    <div class="coll-10">
-        <div class="row justify-content-center">
-            <h1>Help</h1>
+    <div class="col-10">
+        <div>
+            <h1 class="text-center">Help</h1>
         </div>
         <div class="row justify-content-center">
             <p>
