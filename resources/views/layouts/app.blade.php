@@ -7,7 +7,7 @@
   <!-- ternaire -> si pageTitle existe alors on passe $pageTitle suivi de  config('app.name') qui est Hello City 
     si non on affiche seulement config('app.name') qui est (ds dossier config et fichier app.php et clé du tableau 'name') -->
   <title>{{ pageTitle($title ?? null) }}</title>
-
+  <link rel="icon" type="image/png" href="images/favico_hello-city.png" />
   <!-- Fonts -->
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
