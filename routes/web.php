@@ -39,8 +39,8 @@ Route::view('/about', 'pages.about')->name('about');
 //Route::get('/help', fn() => view('pages.help'))->name('help');
 Route::view('/help', ('pages.help'))->name('help');
 
+// route pour auth et compte
 Auth::routes();
-
 Route::get('/compte', [HomeController::class, 'index'])->name('compte');
 
 
